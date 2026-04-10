@@ -2,11 +2,11 @@
 
 ## 下载链接
 
-- 下载地址：[GitHub Releases](https://github.com/iawnfoanaowt/Knowledge-Base-Gateway/releases)
+- 下载地址：[Knowledge-Base-Gateway](https://github.com/iawnfoanaowt/Knowledge-Base-Gateway/releases)
 
 ## 安装步骤与使用说明
 
-- 视频介绍：[【Codex 神器！把 Obsidian、Zotero、EndNote 统一集成为本地科研知识库】](https://www.bilibili.com/video/BV13CDtBsEcg/?share_source=copy_web&vd_source=31d7ef23294e8878d5a5a9aa3c5763ff)
+- 视频介绍：[【写论文神器！AI 自动处理文献，科研效率翻倍！！一个工具打通 EndNote、Zotero、Obsidian】](https://www.bilibili.com/video/BV13CDtBsEcg/?share_source=copy_web&vd_source=31d7ef23294e8878d5a5a9aa3c5763ff)
 
 
 ### 1、安装器界面
