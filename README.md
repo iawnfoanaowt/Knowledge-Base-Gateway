@@ -1,17 +1,23 @@
 # Knowledge Base Gateway
 
+## 下载链接
+
+- 下载地址：[GitHub Releases](https://github.com/iawnfoanaowt/Knowledge-Base-Gateway/releases)
+
+## 安装步骤与使用说明
+
+- 视频介绍：[【Codex 神器！把 Obsidian、Zotero、EndNote 统一集成为本地科研知识库】](https://www.bilibili.com/video/BV13CDtBsEcg/?share_source=copy_web&vd_source=31d7ef23294e8878d5a5a9aa3c5763ff)
+
 ## 版本更新
 
 - 版本号：v1.1.2026.9903
 - 发布日期：2026-04-10
 - 当前版本简要：支持 Obsidian、Zotero、EndNote 三类本地知识源接入，提供 fast 与 deep 两种模式
-- 发布说明：[docs/releases/v1.1.2026.9903.md](docs/releases/v1.1.2026.9903.md)
-- 下载地址：[GitHub Releases](https://github.com/iawnfoanaowt/Knowledge-Base-Gateway/releases)
-- 视频介绍：[【Codex 神器！把 Obsidian、Zotero、EndNote 统一集成为本地科研知识库】](https://www.bilibili.com/video/BV13CDtBsEcg/?share_source=copy_web&vd_source=31d7ef23294e8878d5a5a9aa3c5763ff)
 
-## 安装说明
+## 具体说明
 
-下面内容与仓库中的 [安装说明.md](安装说明.md) 保持一致。
+同上述视频介绍的内容
+
 # Knowledge Base Gateway 安装说明
 
 > 更新说明：当前版本已支持 `EndNote` 作为正式只读数据源，可与 `Obsidian`、`Zotero` 任意组合使用。EndNote 现已支持附件全文检索与 `deep` 模式联动；安装时 EndNote 路径统一填写 `.enl` 文件。程序仅访问数据库内容，不会编辑、删除或修改 EndNote 源资料。
