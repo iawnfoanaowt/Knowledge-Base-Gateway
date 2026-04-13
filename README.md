@@ -2,6 +2,8 @@
 
 `OneFind` （中文名：知寻）是一款供 `ChatGPT Codex` 调用的本地知识库插件，可将 `EndNote`、`Zotero` 与 `Obsidian` 中积累的文献、PDF 和笔记快速接入 AI 工作流，帮助用户在毕业论文、科研论文、文献综述、文献阅读以及基金和项目书撰写中，实现一键安装、快速检索与 AI 辅助回答，解决“文献太多、笔记太散、真正要用时却找不到、想不起、串不起来”的常见痛点。
 
+说明：插件名称Knowledge Base Gateway修改为OneFind（中文名：知寻），并在下一版本1.5 开始使用，感谢社群各位小伙伴取名的建议
+
 ## 下载
 
 - 下载地址：[OneFind Releases](https://github.com/iawnfoanaowt/Knowledge-Base-Gateway/releases)
