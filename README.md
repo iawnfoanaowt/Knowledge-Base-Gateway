@@ -1,14 +1,14 @@
-# Knowledge Base Gateway
+# OneFind
 
-`Knowledge Base Gateway` 是一款供 `ChatGPT Codex` 调用的本地知识库插件，可将 `EndNote`、`Zotero` 与 `Obsidian` 中积累的文献、PDF 和笔记快速接入 AI 工作流，帮助用户在毕业论文、科研论文、文献综述、文献阅读以及基金和项目书撰写中，实现一键安装、快速检索与 AI 辅助回答，解决“文献太多、笔记太散、真正要用时却找不到、想不起、串不起来”的常见痛点。
+`OneFind` （中文名：知寻）是一款供 `ChatGPT Codex` 调用的本地知识库插件，可将 `EndNote`、`Zotero` 与 `Obsidian` 中积累的文献、PDF 和笔记快速接入 AI 工作流，帮助用户在毕业论文、科研论文、文献综述、文献阅读以及基金和项目书撰写中，实现一键安装、快速检索与 AI 辅助回答，解决“文献太多、笔记太散、真正要用时却找不到、想不起、串不起来”的常见痛点。
 
 ## 下载
 
-- 下载地址：[Knowledge-Base-Gateway Releases](https://github.com/iawnfoanaowt/Knowledge-Base-Gateway/releases)
+- 下载地址：[OneFind Releases](https://github.com/iawnfoanaowt/Knowledge-Base-Gateway/releases)
 - 视频介绍：[【写论文神器】AI 自动处理文献，一个工具打通 EndNote、Zotero、Obsidian](https://www.bilibili.com/video/BV13CDtBsEcg/?share_source=copy_web&vd_source=31d7ef23294e8878d5a5a9aa3c5763ff)
-- 公众号：Knowledge Gateway助手
+- 公众号：OneFind
   
-![公众号：Knowledge Gateway助手](https://github.com/user-attachments/assets/9488ebce-b03e-4c64-ad3b-a9c542b92601)
+![公众号：OneFind](https://github.com/user-attachments/assets/9488ebce-b03e-4c64-ad3b-a9c542b92601)
 
 ## 界面示意
 
@@ -38,7 +38,7 @@
 ## 1. 这是什么
 
 做科研时，真正麻烦的通常不是“找不到文献”，而是文献、笔记、批注和 PDF 长期积累后，真正要用时很难快速想起、翻出并串联起来。  
-`Knowledge Base Gateway` 的目标不是把所有资料一股脑塞给大模型，而是让 `Codex` 先在本地知识库中完成检索、筛选和证据定位，再基于这些证据组织回答。
+`OneFind` 的目标不是把所有资料一股脑塞给大模型，而是让 `Codex` 先在本地知识库中完成检索、筛选和证据定位，再基于这些证据组织回答。
 
 它更像是一套面向科研场景的本地研究检索引擎：
 
@@ -258,14 +258,14 @@
 
 推荐直接使用安装目录中的卸载程序：
 
-- `C:\Users\你的用户名\.codex\Function\kb_gateway\KnowledgeBaseGatewayUninstall.exe`
+- `C:\Users\你的用户名\.codex\Function\kb_gateway\OneFindUninstall.exe`
 
 建议操作顺序：
 
 1. 先关闭 `Codex`
 2. 关闭仍在运行的 `Knowledge Base Gateway` 相关窗口或服务
 3. 进入 `kb_gateway` 安装目录
-4. 双击运行 `KnowledgeBaseGatewayUninstall.exe`
+4. 双击运行 `OneFindUninstall.exe`
 5. 按界面提示完成卸载
 
 卸载时只会移除：
@@ -335,7 +335,7 @@
 
 安装目录中附带独立授权工具：
 
-- `KnowledgeBaseGatewayAuthorization.exe`
+- `OneFindAuthorization.exe`
 
 可用于：
 
