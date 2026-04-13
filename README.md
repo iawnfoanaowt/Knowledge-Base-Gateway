@@ -6,6 +6,7 @@
 
 - 下载地址：[Knowledge-Base-Gateway Releases](https://github.com/iawnfoanaowt/Knowledge-Base-Gateway/releases)
 - 视频介绍：[【写论文神器】AI 自动处理文献，一个工具打通 EndNote、Zotero、Obsidian](https://www.bilibili.com/video/BV13CDtBsEcg/?share_source=copy_web&vd_source=31d7ef23294e8878d5a5a9aa3c5763ff)
+- 公众号：Knowledge Gateway助手
 
 ## 界面示意
 
@@ -23,6 +24,9 @@
 
 ### 5. deep 模式分析示例
 ![deep 模式分析示例](docs/screenshots/deep-analysis-example.png)
+
+### 6. 公众号交流
+![Uploading qrcode_for_gh_04e64fa05aa8_258.jpg…]()
 
 ## 当前版本
 
