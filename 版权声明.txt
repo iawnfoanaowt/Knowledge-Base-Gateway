@@ -1,7 +1,9 @@
-Knowledge Base Gateway 安装程序版权声明
+OneFind（中文名：知寻） 安装程序版权声明
 
 版权所有：CrazyGIS
 联系邮箱：zhtaogis@163.com
+公众号：OneFind
+B站号：zhoutaogis
 
 本软件及其相关脚本、配置、说明文档、安装程序和衍生分发包，仅限个人学习与科研使用。
 
@@ -12,7 +14,7 @@ Knowledge Base Gateway 安装程序版权声明
 3. 以未授权方式复制、镜像、再分发完整安装包或其修改版本。
 4. 删除、隐藏或篡改版权归属、作者信息和使用限制说明。
 
-本软件默认只读取用户本地的 Obsidian / Zotero 知识库，不对源库进行写入或删除。
+本软件默认只读取用户本地的EndNote、Zotero、Obsidian、Notion、Mendeley Reference Manager、Citavi7、文件夹 知识库，不对源库进行写入或删除。
 
 如需商用授权或其他特别授权，请联系版权所有者 CrazyGIS。
 联系邮箱：zhtaogis@163.com
