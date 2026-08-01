@@ -442,79 +442,85 @@
       "day_utc": "2026-07-18",
       "views": 2,
       "unique_visitors": 2,
-      "last_seen_snapshot_utc": "2026-07-31T17:55:15Z"
+      "last_seen_snapshot_utc": "2026-08-01T17:17:58Z"
     },
     {
       "day_utc": "2026-07-19",
       "views": 14,
       "unique_visitors": 4,
-      "last_seen_snapshot_utc": "2026-07-31T17:55:15Z"
+      "last_seen_snapshot_utc": "2026-08-01T17:17:58Z"
     },
     {
       "day_utc": "2026-07-20",
       "views": 12,
       "unique_visitors": 5,
-      "last_seen_snapshot_utc": "2026-07-31T17:55:15Z"
+      "last_seen_snapshot_utc": "2026-08-01T17:17:58Z"
     },
     {
       "day_utc": "2026-07-21",
       "views": 8,
       "unique_visitors": 5,
-      "last_seen_snapshot_utc": "2026-07-31T17:55:15Z"
+      "last_seen_snapshot_utc": "2026-08-01T17:17:58Z"
     },
     {
       "day_utc": "2026-07-22",
       "views": 11,
       "unique_visitors": 4,
-      "last_seen_snapshot_utc": "2026-07-31T17:55:15Z"
+      "last_seen_snapshot_utc": "2026-08-01T17:17:58Z"
     },
     {
       "day_utc": "2026-07-23",
       "views": 8,
       "unique_visitors": 3,
-      "last_seen_snapshot_utc": "2026-07-31T17:55:15Z"
+      "last_seen_snapshot_utc": "2026-08-01T17:17:58Z"
     },
     {
       "day_utc": "2026-07-24",
       "views": 6,
       "unique_visitors": 5,
-      "last_seen_snapshot_utc": "2026-07-31T17:55:15Z"
+      "last_seen_snapshot_utc": "2026-08-01T17:17:58Z"
     },
     {
       "day_utc": "2026-07-25",
       "views": 2,
       "unique_visitors": 1,
-      "last_seen_snapshot_utc": "2026-07-31T17:55:15Z"
+      "last_seen_snapshot_utc": "2026-08-01T17:17:58Z"
     },
     {
       "day_utc": "2026-07-26",
       "views": 0,
       "unique_visitors": 0,
-      "last_seen_snapshot_utc": "2026-07-31T17:55:15Z"
+      "last_seen_snapshot_utc": "2026-08-01T17:17:58Z"
     },
     {
       "day_utc": "2026-07-27",
       "views": 6,
       "unique_visitors": 4,
-      "last_seen_snapshot_utc": "2026-07-31T17:55:15Z"
+      "last_seen_snapshot_utc": "2026-08-01T17:17:58Z"
     },
     {
       "day_utc": "2026-07-28",
       "views": 6,
       "unique_visitors": 5,
-      "last_seen_snapshot_utc": "2026-07-31T17:55:15Z"
+      "last_seen_snapshot_utc": "2026-08-01T17:17:58Z"
     },
     {
       "day_utc": "2026-07-29",
       "views": 7,
       "unique_visitors": 4,
-      "last_seen_snapshot_utc": "2026-07-31T17:55:15Z"
+      "last_seen_snapshot_utc": "2026-08-01T17:17:58Z"
     },
     {
       "day_utc": "2026-07-30",
       "views": 28,
       "unique_visitors": 5,
-      "last_seen_snapshot_utc": "2026-07-31T17:55:15Z"
+      "last_seen_snapshot_utc": "2026-08-01T17:17:58Z"
+    },
+    {
+      "day_utc": "2026-07-31",
+      "views": 5,
+      "unique_visitors": 4,
+      "last_seen_snapshot_utc": "2026-08-01T17:17:58Z"
     }
   ]
 }
