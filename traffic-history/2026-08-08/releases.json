@@ -1,0 +1,106 @@
+[
+  {
+    "tag_name": "v1.7.2026.13301",
+    "name": "v1.7.2026.13301",
+    "html_url": "https://github.com/iawnfoanaowt/OneFind/releases/tag/v1.7.2026.13301",
+    "published_at": "2026-05-12T13:33:59Z",
+    "assets": [
+      {
+        "name": "OneFind-macos-arm64-v1.7.dmg",
+        "size": 29291106,
+        "download_count": 121,
+        "browser_download_url": "https://github.com/iawnfoanaowt/OneFind/releases/download/v1.7.2026.13301/OneFind-macos-arm64-v1.7.dmg"
+      },
+      {
+        "name": "OneFindInstaller-windows_1.7.exe",
+        "size": 260012256,
+        "download_count": 704,
+        "browser_download_url": "https://github.com/iawnfoanaowt/OneFind/releases/download/v1.7.2026.13301/OneFindInstaller-windows_1.7.exe"
+      }
+    ]
+  },
+  {
+    "tag_name": "v1.6.2026.11705",
+    "name": "v1.6.2026.11705",
+    "html_url": "https://github.com/iawnfoanaowt/OneFind/releases/tag/v1.6.2026.11705",
+    "published_at": "2026-04-26T15:04:28Z",
+    "assets": [
+      {
+        "name": "OneFindInstaller_1.6.exe",
+        "size": 259725536,
+        "download_count": 175,
+        "browser_download_url": "https://github.com/iawnfoanaowt/OneFind/releases/download/v1.6.2026.11705/OneFindInstaller_1.6.exe"
+      }
+    ]
+  },
+  {
+    "tag_name": "v1.5.2026.10704",
+    "name": "OneFind v1.5.2026.10704",
+    "html_url": "https://github.com/iawnfoanaowt/OneFind/releases/tag/v1.5.2026.10704",
+    "published_at": "2026-04-16T08:24:20Z",
+    "assets": [
+      {
+        "name": "OneFindInstaller_1.5.exe",
+        "size": 258496736,
+        "download_count": 108,
+        "browser_download_url": "https://github.com/iawnfoanaowt/OneFind/releases/download/v1.5.2026.10704/OneFindInstaller_1.5.exe"
+      }
+    ]
+  },
+  {
+    "tag_name": "v1.5.2026.10609",
+    "name": "OneFind v1.5.2026.10609",
+    "html_url": "https://github.com/iawnfoanaowt/OneFind/releases/tag/v1.5.2026.10609",
+    "published_at": "2026-04-16T08:11:49Z",
+    "assets": [
+      {
+        "name": "OneFindInstaller_1.5.exe",
+        "size": 258496736,
+        "download_count": 3,
+        "browser_download_url": "https://github.com/iawnfoanaowt/OneFind/releases/download/v1.5.2026.10609/OneFindInstaller_1.5.exe"
+      }
+    ]
+  },
+  {
+    "tag_name": "v1.4.2026.10104",
+    "name": "Knowledge Base Gateway v1.4.2026.10104",
+    "html_url": "https://github.com/iawnfoanaowt/OneFind/releases/tag/v1.4.2026.10104",
+    "published_at": "2026-04-11T14:47:23Z",
+    "assets": [
+      {
+        "name": "KnowledgeBaseGatewayInstaller.exe",
+        "size": 357648686,
+        "download_count": 80,
+        "browser_download_url": "https://github.com/iawnfoanaowt/OneFind/releases/download/v1.4.2026.10104/KnowledgeBaseGatewayInstaller.exe"
+      }
+    ]
+  },
+  {
+    "tag_name": "v1.2.2026.10009",
+    "name": "Knowledge Base Gateway v1.2.2026.10009",
+    "html_url": "https://github.com/iawnfoanaowt/OneFind/releases/tag/v1.2.2026.10009",
+    "published_at": "2026-04-10T12:55:08Z",
+    "assets": [
+      {
+        "name": "KnowledgeBaseGatewayInstaller.exe",
+        "size": 357677358,
+        "download_count": 30,
+        "browser_download_url": "https://github.com/iawnfoanaowt/OneFind/releases/download/v1.2.2026.10009/KnowledgeBaseGatewayInstaller.exe"
+      }
+    ]
+  },
+  {
+    "tag_name": "v1.1.2026.9903",
+    "name": "Knowledge Base Gateway v1.1.2026.9903",
+    "html_url": "https://github.com/iawnfoanaowt/OneFind/releases/tag/v1.1.2026.9903",
+    "published_at": "2026-04-09T13:52:18Z",
+    "assets": [
+      {
+        "name": "KnowledgeBaseGatewayInstaller.exe",
+        "size": 357632295,
+        "download_count": 23,
+        "browser_download_url": "https://github.com/iawnfoanaowt/OneFind/releases/download/v1.1.2026.9903/KnowledgeBaseGatewayInstaller.exe"
+      }
+    ]
+  }
+]
