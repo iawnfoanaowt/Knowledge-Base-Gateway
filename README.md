@@ -2,12 +2,11 @@
   <a href="./README.md">简体中文</a> | <a href="./README_EN.md">English</a>
 </p>
 
-
 # OneFind（中文：知寻）
 
 > 明明看过，却想不起来？  
 > **OneFind 让你的本地知识随时可用**，帮助用户在毕业论文、科研论文、文献综述、文献阅读以及基金和项目书撰写中，实现一键安装、快速检索与 AI 辅助回答，解决“文献太多、笔记太散、真正要用时却找不到、想不起、串不起来”的常见痛点。
-> <img width="1536" height="1024" alt="第二期视频封面" src="https://github.com/user-attachments/assets/da0d5d0d-4b49-445d-af3e-4274cfdf966b" />
+><img width="1536" height="1024" alt="第二期视频封面" src="https://github.com/user-attachments/assets/da0d5d0d-4b49-445d-af3e-4274cfdf966b" />
 
 ---
 
@@ -33,7 +32,7 @@ OneFind 是一个供 AI Agent 调用的**本地知识库插件**。它可以把�
 - ⚡ 自动建立索引，后续检索更快
 - 🧠 按任务难度在 Balance / Deep 模式间自动切换
 - 🤖 通过 Codex 或 ZCode 调用更多 AI Agent 和模型
-- 🧩 支持 Skill / MCP 双路径调用：可选择 OneFind Skill，也可直接在对话中要求调用 OneFind
+- 🧩 支持 Skill / MCP 双路径调用：可选择 `onefind` Skill，也可直接在对话中要求调用 OneFind
 
 一句话理解：
 
@@ -46,7 +45,7 @@ OneFind 是一个供 AI Agent 调用的**本地知识库插件**。它可以把�
 ### 支持的 AI 平台
 
 - **Codex**：适合已经使用 ChatGPT / Codex 的用户
-- **ZCode**：可接入 Claude Code、Codex、Gemini、OpenCode 等 AI Agent 框架，并可搭配第三方模型 API 使用
+- **ZCode**：使用统一的 ZCode Agent，并可搭配 ZCode 中已接入的第三方模型 API 调用 OneFind
 
 两者可以按需选择，也可以同时安装。OneFind 会根据本地环境自动适配。
 
@@ -148,13 +147,14 @@ https://github.com/iawnfoanaowt/OneFind/releases
 安装时可以：
 
 - 自定义 OneFind 安装位置，不限定于 C 盘
-- 填写知识库路径
+- 填写知识库路径，包括最多三个本地文件夹
 - 按需安装 deep 模块
 - 按需导入授权文件
+- 按需启用 MinerU，并填写自己的 API Token
 
 ### 3️⃣ 初始化
 
-在 Codex 或 ZCode 中，可以通过 OneFind Skill 唤起，也可以直接对话调用 OneFind，然后输入：
+在 Codex 或 ZCode 中，可以通过 `onefind` Skill 唤起，也可以直接对话调用 OneFind，然后输入：
 
 ```text
 请调用 OneFind 初始化索引，并检测 deep 模式能否正常调用
@@ -168,7 +168,7 @@ https://github.com/iawnfoanaowt/OneFind/releases
 
 在 Codex 或 ZCode 中，OneFind 有两种常用调用方式：
 
-1. **Skill 唤起**：选择或输入 `OneFind` Skill 后提问；
+1. **Skill 唤起**：选择或输入 `onefind` Skill 后提问；
 2. **直接对话调用**：在问题中写明“请调用 OneFind”或“基于 OneFind 检索”。
 
 例如：
@@ -189,10 +189,10 @@ https://github.com/iawnfoanaowt/OneFind/releases
 
 ## 🔬 Balance vs Deep 模式
 
-| 模式    | 适用场景                             |
-| ------- | ------------------------------------ |
-| Balance | 快速检索、日常查找、简单问答         |
-| Deep    | 深度分析、正文证据检索、复杂文献问题 |
+| 模式 | 适用场景 |
+| ---- | -------- |
+| Balance | 快速检索、日常查找、简单问答 |
+| Deep | 深度分析、正文证据检索、复杂文献问题 |
 
 OneFind 会根据问题难度自动选择合适模式，也可以按需指定。
 
@@ -203,15 +203,15 @@ OneFind 会根据问题难度自动选择合适模式，也可以按需指定。
 <details>
 <summary>点击展开</summary>
 
-
 ### 安装前准备
 
-1. 安装 Codex 或 ZCode，二者至少选择一个。  
-2. 准备至少 1 个有效知识库路径。  
-3. 如需使用 EndNote、本地文件夹、Office 文档或 CAJ 解析，请提前准备授权。  
-4. 如需 Deep 模式，请预留一定磁盘空间。  
+1. 安装 Codex 或 ZCode，二者至少选择一个。
+2. 准备至少 1 个有效知识库路径。
+3. 如需使用 EndNote、本地文件夹、现代 Office 文档或 CAJ 解析，请提前准备授权。
+4. 如需 Deep 模式，请预留一定磁盘空间。
+5. 如需使用 MinerU 增强解析，可提前在 [MinerU API 管理页面](https://mineru.net/apiManage/token) 创建 Token；不使用 MinerU 不影响 OneFind 的本地解析和检索。
 
-> ZCode 本身是 AI Agent 集成平台，不直接提供模型。使用第三方模型时，需要自行配置模型 API，或登录已有的 Claude Code、Codex、Gemini 等账号。
+> 新版 ZCode 使用统一的 ZCode Agent。需要使用第三方模型时，请先在 ZCode 中配置对应的模型 API。
 
 ---
 
@@ -222,9 +222,9 @@ OneFind 会根据问题难度自动选择合适模式，也可以按需指定。
 3. 选择 OneFind 安装位置。
 4. 填写知识库路径。
 5. 按需安装 deep 模块和导入授权文件。
-6. 打开 Codex 或 ZCode，通过 OneFind Skill 或直接对话调用 OneFind。
+6. 打开 Codex 或 ZCode，通过 `onefind` Skill 或直接对话调用 OneFind。
 
-![](https://paperead-zt.oss-cn-beijing.aliyuncs.com/img/20260511100844657.png)
+![OneFind 1.8 安装位置与目标平台](https://paperead-zt.oss-cn-beijing.aliyuncs.com/img/20260811160853259.png)
 
 ---
 
@@ -237,7 +237,7 @@ OneFind 会根据问题难度自动选择合适模式，也可以按需指定。
 3. 设置 Zotero、Obsidian、Notion 或本地文件夹等知识库路径。
 4. 按需完成授权。
 5. 开启必要的本地文件访问权限。
-6. 通过 OneFind Skill 或直接对话调用 OneFind，并初始化索引。
+6. 通过 `onefind` Skill 或直接对话调用 OneFind，并初始化索引。
 
 ![](https://paperead-zt.oss-cn-beijing.aliyuncs.com/img/20260511174720228.png)
 
@@ -251,26 +251,26 @@ OneFind 会根据问题难度自动选择合适模式，也可以按需指定。
 
 ---
 
-### ZCode 使用说明
+### ZCode Agent 使用说明
 
-ZCode 可用于调用更多 AI Agent 和第三方模型。
+**ZCode**：新版使用统一的 ZCode Agent。安装 OneFind 后，可直接通过 `onefind` Skill 或 MCP 检索本地知识库，也可以搭配 ZCode 中已接入的第三方模型 API 使用。
 
-常见方式包括：
-
-- 直接登录已有的 Claude Code / Codex / Gemini 等账号
-- 配置第三方模型 API，例如 DeepSeek、Qwen 等
-- 在 ZCode 中选择不同模型，再调用 OneFind 检索本地知识库
-
-![](https://paperead-zt.oss-cn-beijing.aliyuncs.com/img/20260511110818531.png)
+![image-20260811170840657](https://paperead-zt.oss-cn-beijing.aliyuncs.com/img/20260811170840775.png)
 
 ### Skill / MCP 调用说明
 
-Codex 与 ZCode 均支持 Skill 和 MCP 双路径调用 OneFind：
+Codex 与 ZCode Agent 均支持 Skill 和 MCP 双路径调用 OneFind：
 
-- 选择或输入 `OneFind` Skill 后提问，适合希望明确指定工具的场景；
+- 选择或输入 `onefind` Skill 后提问，适合希望明确指定工具的场景；
 - 直接在对话中说“请调用 OneFind 检索……”或“基于 OneFind 查找……”，适合日常自然语言使用。
 
 两种方式功能一致。双路径设计主要用于提升兼容性，减少因不同电脑环境、平台检测方式或 Skill 识别不稳定导致无法调用 OneFind 的问题。
+
+其他支持 MCP 或 Skill 的 Agent 也可以适配 OneFind。可以向对应 Agent 提出：
+
+```text
+请适配访问 OneFind 的 onefind Skill，并配置 OneFind MCP 服务。
+```
 
 ![image-20260512212949130](https://paperead-zt.oss-cn-beijing.aliyuncs.com/img/20260512212949222.png)
 
@@ -321,25 +321,23 @@ OneFind 不会删除你的原始知识库文件。需要卸载时，请使用安
 
 ### 常见问题
 
-**Q：安装失败怎么办？**  
+**Q：安装失败怎么办？**
 A：通常与网络中断、权限或旧版本残留有关。可切换网络后重试，或删除旧安装目录后重新安装。
 
-**Q：ZCode 是否必须使用？**  
+**Q：ZCode 是否必须使用？**
 A：不是。已有 Codex 的用户可以继续使用 Codex；希望调用更多模型的用户可以使用 ZCode。
 
-**Q：Mac Intel 芯片能用吗？**  
+**Q：Mac Intel 芯片能用吗？**
 A：当前 macOS 端主要支持 Apple Silicon（M 系列芯片），过老的 Mac 电脑，会影响检索的性能。
 
-**Q：OneFind 会修改我的原始文献吗？**  
-A：不会。OneFind 对本地只读访问和索引构建，不会替代或破坏原有知识库。
+**Q：需要 MinerU 处理的 PDF 超过每日限额怎么办？**
+A：MinerU API 每天最多处理 200 篇 PDF。超过限额后，可以在接下来的几天中每天重新刷新或重建一次索引。当天已经成功处理的正文会保存在 OneFind 本地缓存中，后续会自动跳过；OneFind 只继续处理尚未完成的 PDF。本地解析成功的 PDF 不会进入 MinerU 队列，也不占用 MinerU 处理数量。
 
-**Q：Mac安装报错，可以看下面的教程**
-<img width="1732" height="910" alt="image" src="https://github.com/user-attachments/assets/c9ca04ad-f712-40d7-a374-072e0e6f8aa1" />
-<img width="997" height="769" alt="image" src="https://github.com/user-attachments/assets/d4c46d6b-95a6-4885-806b-7cda3cd4bdad" />
-sudo spctl --master-disable
-<img width="986" height="767" alt="image" src="https://github.com/user-attachments/assets/9c217e1c-ed1e-4be2-b93c-2ebaf0ff07b3" />
-<img width="997" height="224" alt="image" src="https://github.com/user-attachments/assets/718595a0-a333-4582-b7bf-c4ee18733e21" />
-<img width="1038" height="837" alt="image" src="https://github.com/user-attachments/assets/afc853e2-1414-4e99-b3f7-4cf2b9990138" />
+**Q：使用 MinerU 会上传所有 PDF 吗？**
+A：不会。OneFind 优先在本地解析，只有解析失败或正文质量较差的 PDF 才会在启用 MinerU 并配置 Token 后提交处理。
+
+**Q：OneFind 会修改我的原始文献吗？**
+A：不会。OneFind 对本地只读访问和索引构建，不会替代或破坏原有知识库。
 
 </details>
 
@@ -350,7 +348,7 @@ sudo spctl --master-disable
 - 科研人员 / 学生
 - 写论文、综述、基金和项目书的用户
 - 长期使用 Zotero / Obsidian / EndNote 等知识库软件的人
-- 有大量 PDF、Word、PPT、Excel、CAJ 或项目材料的人
+- 有大量 PDF、现代 Word/PPT/Excel、Markdown、TXT、CAJ 或项目材料的人
 - 希望 AI 基于自己资料回答，而不是只靠通用知识生成的人
 
 ---
@@ -360,15 +358,16 @@ sudo spctl --master-disable
 - OneFind 不替代科研判断
 - OneFind 不自动下载文献
 - OneFind 更适合长期知识管理者
-- 第三方模型 API、Codex、Claude Code、Gemini 等服务需按各平台规则自行配置或订阅
+- 第三方模型 API、Codex 和 ZCode 等服务需按各平台规则自行配置或订阅
 
 ---
 
 ## 📄 License
 
-仅限个人学习与科研使用。  
+仅限个人学习与科研使用。
 如需商用授权或其他特别授权，请联系版权所有者 CrazyGIS。
 
 联系邮箱：`zhtaogis@163.com`
 
 公众号：OneFind
+
