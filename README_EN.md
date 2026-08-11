@@ -4,7 +4,7 @@
 
 # OneFind
 
-> Read it before, but cannot recall it when you need it?  
+> Read it before, but cannot recall it when you need it?
 > **OneFind makes your local knowledge instantly usable.** It helps users connect papers, notes, attachments, and local files to AI agents for fast retrieval and AI-assisted answers, especially when writing theses, research papers, literature reviews, grant proposals, and project documents.
 >
 ><img width="1536" height="1024" alt="OneFind cover" src="https://github.com/user-attachments/assets/da0d5d0d-4b49-445d-af3e-4274cfdf966b" />
@@ -33,7 +33,7 @@ With OneFind, you can:
 - ⚡ Build local indexes automatically for faster retrieval
 - 🧠 Switch between Balance and Deep modes according to task difficulty
 - 🤖 Use Codex or ZCode to connect OneFind with more AI agents and models
-- 🧩 Invoke OneFind through Skill or MCP: select the OneFind Skill, or ask the agent to call OneFind directly
+- 🧩 Invoke OneFind through Skill or MCP: select the `onefind` Skill, or ask the agent to call OneFind directly
 
 In one sentence:
 
@@ -46,7 +46,7 @@ In one sentence:
 ### Supported AI platforms
 
 - **Codex**: suitable for users who already work with ChatGPT / Codex
-- **ZCode**: supports AI agent frameworks such as Claude Code, Codex, Gemini, and OpenCode, and can work with third-party model APIs
+- **ZCode**: uses a unified ZCode Agent and can call OneFind with third-party model APIs already configured in ZCode
 
 You can use either Codex or ZCode, or install both. OneFind will adapt to your local environment.
 
@@ -54,7 +54,7 @@ You can use either Codex or ZCode, or install both. OneFind will adapt to your l
 
 Both Codex and ZCode support two ways to call OneFind:
 
-- **Skill invocation**: select or type the `OneFind` Skill in the input box, then ask your retrieval or analysis question.
+- **Skill invocation**: select or type the `onefind` Skill in the input box, then ask your retrieval or analysis question.
 - **Direct natural-language invocation**: simply ask the agent to “call OneFind” or “search with OneFind”; the agent can call OneFind through the MCP path.
 
 Both methods provide the same OneFind features and improve compatibility when different local environments cannot reliably detect or invoke OneFind through only one path.
@@ -76,6 +76,41 @@ Both methods provide the same OneFind features and improve compatibility when di
 - Word / PPT / PDF / Excel / Markdown / CAJ files, partly authorization required
 
 > Advanced parsing features such as EndNote, local folders, Office documents, and CAJ files require authorization. You may send your machine code to `zhtaogis@163.com` to request access. Authorization is available for personal learning and research use.
+
+---
+
+## 🆕 What's new in 1.8
+
+### MinerU-enhanced parsing
+
+OneFind 1.8 adds optional MinerU API-enhanced parsing for scanned, older, or complex-layout PDFs:
+
+```text
+Local parsing → failed or low-quality text → MinerU-enhanced parsing → OneFind index
+```
+
+- OneFind always tries local PDF parsers first. It does not send every PDF to MinerU.
+- Only PDFs that fail local parsing or produce low-quality text enter the MinerU processing queue.
+- MinerU requires your own API token, available from the [MinerU API management page](https://mineru.net/apiManage/token).
+- If MinerU is disabled or no token is provided, OneFind will not upload PDFs to MinerU.
+- Successfully parsed MinerU results are cached locally and reused during later index refreshes.
+
+> MinerU API can process up to 200 PDF files per day. If more than 200 files require enhanced parsing, refresh or rebuild the index again on the following days. OneFind automatically skips PDFs that have already been successfully processed and cached by MinerU, and continues with the remaining files.
+
+![OneFind MinerU API settings](https://paperead-zt.oss-cn-beijing.aliyuncs.com/img/20260811161027111.png)
+
+### Three Folder knowledge sources and TXT support
+
+You can now configure up to three local Folder knowledge sources for papers, project materials, textbooks, or other file collections. OneFind 1.8 also adds `.txt` parsing.
+
+![Three Folder knowledge sources in OneFind](https://paperead-zt.oss-cn-beijing.aliyuncs.com/img/20260811161038941.png)
+
+### Faster indexing and more accurate retrieval
+
+- Unchanged documents can reuse extracted text and vectors instead of being processed again.
+- Long indexing tasks expose their phase, progress, and status, and can resume after interruption.
+- Exact titles, DOIs, authors, and record keys are prioritized to avoid unnecessary cross-source scans.
+- Deep mode can search inside a target document for relevant pages and passages, producing answers that stay closer to the source evidence.
 
 ---
 
@@ -148,13 +183,14 @@ Before installation, prepare:
 During installation, you can:
 
 - Choose a custom OneFind installation location, not limited to the C drive
-- Add knowledge base paths
+- Add knowledge base paths, including up to three local folders
 - Install the Deep module when needed
 - Import an authorization file when needed
+- Enable MinerU and enter your own API token when needed
 
 ### 3️⃣ Initialize
 
-In Codex or ZCode, invoke OneFind through the OneFind Skill or ask the agent to call OneFind directly, then enter:
+In Codex or ZCode, invoke OneFind through the `onefind` Skill or ask the agent to call OneFind directly, then enter:
 
 ```text
 Please call OneFind to initialize the index and check whether Deep mode can be used normally.
@@ -168,7 +204,7 @@ The first indexing process depends on the size of your materials and your comput
 
 In Codex or ZCode, OneFind can be called in two common ways:
 
-1. **Skill invocation**: select or type the `OneFind` Skill before asking your question.
+1. **Skill invocation**: select or type the `onefind` Skill before asking your question.
 2. **Direct natural-language invocation**: ask the agent to “call OneFind” or “search with OneFind” in your prompt.
 
 For example:
@@ -205,12 +241,13 @@ OneFind can automatically choose a suitable mode based on question difficulty. Y
 
 ### Before installation
 
-1. Install Codex or ZCode. Choose at least one of them.  
-2. Prepare at least one valid knowledge base path.  
-3. If you need EndNote, local folder parsing, Office document parsing, or CAJ parsing, prepare authorization in advance.  
-4. If you need Deep mode, reserve enough disk space.  
+1. Install Codex or ZCode. Choose at least one of them.
+2. Prepare at least one valid knowledge base path.
+3. If you need EndNote, local folder parsing, modern Office document parsing, or CAJ parsing, prepare authorization in advance.
+4. If you need Deep mode, reserve enough disk space.
+5. If you need MinerU-enhanced parsing, create a token on the [MinerU API management page](https://mineru.net/apiManage/token). OneFind's local parsing and retrieval remain available without MinerU.
 
-> ZCode is an AI agent integration platform. It does not directly provide models. To use third-party models, configure your own model API or log in to your existing Claude Code, Codex, Gemini, or other accounts.
+> The latest ZCode uses a unified ZCode Agent. Configure the relevant model API in ZCode if you want to use a third-party model.
 
 ---
 
@@ -221,9 +258,9 @@ OneFind can automatically choose a suitable mode based on question difficulty. Y
 3. Choose the OneFind installation location.
 4. Add your knowledge base paths.
 5. Install the Deep module and import authorization if needed.
-6. Open Codex or ZCode, then call OneFind through the OneFind Skill or direct natural-language invocation.
+6. Open Codex or ZCode, then call OneFind through the `onefind` Skill or direct natural-language invocation.
 
-![](https://paperead-zt.oss-cn-beijing.aliyuncs.com/img/20260511100844657.png)
+![OneFind 1.8 installation location and target platforms](https://paperead-zt.oss-cn-beijing.aliyuncs.com/img/20260811160853259.png)
 
 ---
 
@@ -236,7 +273,7 @@ The macOS version currently focuses on **Apple Silicon**, such as M-series Macs.
 3. Set knowledge base paths, such as Zotero, Obsidian, Notion, or local folders.
 4. Complete authorization if needed.
 5. Grant the required local file access permissions.
-6. Call OneFind through the OneFind Skill or direct natural-language invocation, then initialize the index.
+6. Call OneFind through the `onefind` Skill or direct natural-language invocation, then initialize the index.
 
 ![](https://paperead-zt.oss-cn-beijing.aliyuncs.com/img/20260511174720228.png)
 
@@ -250,26 +287,26 @@ Please initialize the index and check whether Deep mode is available.
 
 ---
 
-### ZCode usage
+### ZCode Agent usage
 
-ZCode can be used to access more AI agents and third-party models.
+**ZCode** now uses a unified ZCode Agent. After installing OneFind, you can search your local knowledge base directly through the `onefind` Skill or MCP, including with third-party model APIs already configured in ZCode.
 
-Common options include:
-
-- Log in to existing Claude Code / Codex / Gemini accounts
-- Configure third-party model APIs, such as DeepSeek or Qwen
-- Select different models in ZCode and call OneFind to retrieve your local knowledge base
-
-![](https://paperead-zt.oss-cn-beijing.aliyuncs.com/img/20260511110818531.png)
+![ZCode Agent with OneFind](https://paperead-zt.oss-cn-beijing.aliyuncs.com/img/20260811170840775.png)
 
 ### Skill / MCP invocation
 
-Codex and ZCode both support the Skill + MCP dual-path design for calling OneFind:
+Codex and ZCode Agent both support the Skill + MCP dual-path design for calling OneFind:
 
-- Select or type the `OneFind` Skill before asking a question when you want to explicitly specify the tool.
+- Select or type the `onefind` Skill before asking a question when you want to explicitly specify the tool.
 - Ask the agent directly to “call OneFind” or “search with OneFind” for everyday natural-language use.
 
 Both methods provide the same OneFind features. The dual-path design improves compatibility and reduces cases where OneFind cannot be detected or called because of differences in local environments, platform detection, or Skill recognition.
+
+Other agents that support MCP or Skills can also be adapted to OneFind. You can give the agent this instruction:
+
+```text
+Please add access to OneFind's onefind Skill and configure the OneFind MCP server.
+```
 
 ![image-20260512213124160](https://paperead-zt.oss-cn-beijing.aliyuncs.com/img/20260512213124234.png)
 
@@ -320,16 +357,22 @@ Please change my Obsidian knowledge base path to XXX.
 
 ### FAQ
 
-**Q: What should I do if installation fails?**  
+**Q: What should I do if installation fails?**
 A: It is usually related to network interruption, permissions, or leftovers from an older version. Try switching networks or removing the old installation directory before reinstalling.
 
-**Q: Is ZCode required?**  
+**Q: Is ZCode required?**
 A: No. Codex users can continue using Codex. ZCode is useful if you want to connect more models.
 
-**Q: Can Intel-based Macs use OneFind?**  
+**Q: Can Intel-based Macs use OneFind?**
 A: The macOS version currently focuses on Apple Silicon devices. Older Intel Macs may have limited retrieval performance.
 
-**Q: Will OneFind modify my original papers or notes?**  
+**Q: What if more PDFs need MinerU than the daily limit allows?**
+A: MinerU API can process up to 200 PDF files per day. If you exceed the limit, refresh or rebuild the index again on the following days. Successful MinerU results remain in OneFind's local cache and are skipped automatically, so only unfinished PDFs continue processing. PDFs parsed successfully by OneFind's local parsers do not enter the MinerU queue or consume this quota.
+
+**Q: Does MinerU upload every PDF in my knowledge base?**
+A: No. OneFind parses PDFs locally first. A PDF is submitted only when local parsing fails or produces low-quality text, and only when MinerU is enabled and a token is configured.
+
+**Q: Will OneFind modify my original papers or notes?**
 A: No. OneFind builds indexes from local read-only access and does not replace or damage your original knowledge base.
 
 </details>
@@ -341,7 +384,7 @@ A: No. OneFind builds indexes from local read-only access and does not replace o
 - Researchers and students
 - Users writing papers, reviews, grant proposals, or project documents
 - Long-term users of Zotero, Obsidian, EndNote, and similar knowledge tools
-- Users with many PDFs, Word documents, PPTs, Excel files, CAJ files, or project materials
+- Users with many PDFs, modern Word/PPT/Excel files, Markdown, TXT, CAJ files, or project materials
 - Anyone who wants AI to answer based on their own materials rather than only general knowledge
 
 ---
@@ -351,15 +394,16 @@ A: No. OneFind builds indexes from local read-only access and does not replace o
 - OneFind does not replace your own academic judgment
 - OneFind does not automatically download papers
 - OneFind is more suitable for long-term knowledge management
-- Third-party model APIs, Codex, Claude Code, Gemini, and similar services need to be configured or subscribed to according to their own platform rules
+- Third-party model APIs, Codex, ZCode, and similar services need to be configured or subscribed to according to their own platform rules
 
 ---
 
 ## 📄 License
 
-For personal learning and research use only.  
+For personal learning and research use only.
 For commercial use or other special authorization, please contact the copyright owner, CrazyGIS.
 
 Email: `zhtaogis@163.com`
 
 WeChat official account: OneFind
+
