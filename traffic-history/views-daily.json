@@ -646,79 +646,85 @@
       "day_utc": "2026-08-21",
       "views": 18,
       "unique_visitors": 7,
-      "last_seen_snapshot_utc": "2026-09-03T19:18:39Z"
+      "last_seen_snapshot_utc": "2026-09-04T19:00:03Z"
     },
     {
       "day_utc": "2026-08-22",
       "views": 4,
       "unique_visitors": 3,
-      "last_seen_snapshot_utc": "2026-09-03T19:18:39Z"
+      "last_seen_snapshot_utc": "2026-09-04T19:00:03Z"
     },
     {
       "day_utc": "2026-08-23",
       "views": 0,
       "unique_visitors": 0,
-      "last_seen_snapshot_utc": "2026-09-03T19:18:39Z"
+      "last_seen_snapshot_utc": "2026-09-04T19:00:03Z"
     },
     {
       "day_utc": "2026-08-24",
       "views": 5,
       "unique_visitors": 5,
-      "last_seen_snapshot_utc": "2026-09-03T19:18:39Z"
+      "last_seen_snapshot_utc": "2026-09-04T19:00:03Z"
     },
     {
       "day_utc": "2026-08-25",
       "views": 9,
       "unique_visitors": 6,
-      "last_seen_snapshot_utc": "2026-09-03T19:18:39Z"
+      "last_seen_snapshot_utc": "2026-09-04T19:00:03Z"
     },
     {
       "day_utc": "2026-08-26",
       "views": 2,
       "unique_visitors": 2,
-      "last_seen_snapshot_utc": "2026-09-03T19:18:39Z"
+      "last_seen_snapshot_utc": "2026-09-04T19:00:03Z"
     },
     {
       "day_utc": "2026-08-27",
       "views": 7,
       "unique_visitors": 4,
-      "last_seen_snapshot_utc": "2026-09-03T19:18:39Z"
+      "last_seen_snapshot_utc": "2026-09-04T19:00:03Z"
     },
     {
       "day_utc": "2026-08-28",
       "views": 4,
       "unique_visitors": 4,
-      "last_seen_snapshot_utc": "2026-09-03T19:18:39Z"
+      "last_seen_snapshot_utc": "2026-09-04T19:00:03Z"
     },
     {
       "day_utc": "2026-08-29",
       "views": 3,
       "unique_visitors": 1,
-      "last_seen_snapshot_utc": "2026-09-03T19:18:39Z"
+      "last_seen_snapshot_utc": "2026-09-04T19:00:03Z"
     },
     {
       "day_utc": "2026-08-30",
       "views": 20,
       "unique_visitors": 5,
-      "last_seen_snapshot_utc": "2026-09-03T19:18:39Z"
+      "last_seen_snapshot_utc": "2026-09-04T19:00:03Z"
     },
     {
       "day_utc": "2026-08-31",
       "views": 15,
       "unique_visitors": 8,
-      "last_seen_snapshot_utc": "2026-09-03T19:18:39Z"
+      "last_seen_snapshot_utc": "2026-09-04T19:00:03Z"
     },
     {
       "day_utc": "2026-09-01",
       "views": 0,
       "unique_visitors": 0,
-      "last_seen_snapshot_utc": "2026-09-03T19:18:39Z"
+      "last_seen_snapshot_utc": "2026-09-04T19:00:03Z"
     },
     {
       "day_utc": "2026-09-02",
       "views": 6,
       "unique_visitors": 5,
-      "last_seen_snapshot_utc": "2026-09-03T19:18:39Z"
+      "last_seen_snapshot_utc": "2026-09-04T19:00:03Z"
+    },
+    {
+      "day_utc": "2026-09-03",
+      "views": 8,
+      "unique_visitors": 5,
+      "last_seen_snapshot_utc": "2026-09-04T19:00:03Z"
     }
   ]
 }
